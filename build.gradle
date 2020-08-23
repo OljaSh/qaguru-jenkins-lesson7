@@ -31,4 +31,10 @@ tasks.withType(Test) {
 task simple_tests (type: Test) {
     useJUnitPlatform {
     }
+
+    task apple_tests(type: Test) {
+        useJUnitPlatform {
+            includeTags 'apple_tag'
+        }
+    }
 }
